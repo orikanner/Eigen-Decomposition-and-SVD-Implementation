@@ -1,4 +1,4 @@
-# PCA-Implementation
+# SVD and Eigen Decomposition for Dimensionality Reduction: Implementation and Comparison
 
 This repository is a learning exercise where I explore two approaches to performing dimensionality reduction with PCA: eigen decomposition and SVD.
 
