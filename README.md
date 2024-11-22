@@ -58,7 +58,7 @@ The **Spectral Theorem** ensures that symmetric matrices like `X^T X` can always
 **Diagonalization**:
 
 - **Definition**: A specific case of eigen decomposition where:  
-  $$ M = Q \Lambda Q^{-1} $$  
+  $`M = Q \Lambda Q^-1 `$  
   with:  
   - $Q$: Matrix containing enough linearly independent eigenvectors to span the matrix's space (a full basis).  
   - $\Lambda$: Diagonal matrix of eigenvalues.  
