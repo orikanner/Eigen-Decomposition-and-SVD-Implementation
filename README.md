@@ -41,40 +41,49 @@ The **Spectral Theorem** ensures that symmetric matrices like `X^T X` can always
 
 ### Clarification: The Difference Between Eigen Decomposition and Diagonalization
 
-1. **Eigen Decomposition**:
-   - **Definition**: The process of representing a square matrix \( M \) as:
-     \[
-     M = Q \Lambda Q^{-1}
-     \]
-     where:
-     - \( Q \): Matrix of eigenvectors (not necessarily independent).
-     - \( \Lambda \): Diagonal matrix of eigenvalues.
-   - **Applicability**:
-     - Eigen decomposition works for any square matrix, even if the eigenvectors are not linearly independent.
-     - If there aren't enough independent eigenvectors, \( Q \) won't fully span the matrix's space, but eigen decomposition can still provide eigenvalues and eigenvectors.
+**Eigen Decomposition**:
 
-2. **Diagonalization**:
-   - **Definition**: A specific case of eigen decomposition where:
-     \[
-     M = Q \Lambda Q^{-1}
-     \]
-     with:
-     - \( Q \): Matrix containing enough linearly independent eigenvectors to span the matrix's space (a full basis).
-     - \( \Lambda \): Diagonal matrix of eigenvalues.
-   - **Conditions**:
-     - The matrix must have a full rank of linearly independent eigenvectors.
-     - Symmetric and positive definite matrices satisfy this condition, which ensures diagonalization.
+- **Definition**: The process of representing a square matrix $M$ as:  
+  $$ M = Q \Lambda Q^{-1} $$  
+  where:  
+  - $Q$: Matrix of eigenvectors (not necessarily independent).  
+  - $\Lambda$: Diagonal matrix of eigenvalues.  
 
-3. **Key Differences**:
-   - **Eigen Decomposition**:
-     - A general process.
-     - Works even if eigenvectors are not linearly independent.
-     - Resulting matrix \( Q \) may not fully describe a basis, so \( M \) cannot always be diagonalized.
-   - **Diagonalization**:
-     - A stricter condition requiring enough independent eigenvectors to fully span the matrix's space.
-     - Fails if eigenvectors are dependent (e.g., defective matrices).
+- **Applicability**:  
+  - Eigen decomposition works for any square matrix, even if the eigenvectors are not linearly independent.  
+  - If there aren't enough independent eigenvectors, $Q$ won't fully span the matrix's space, but eigen decomposition can still provide eigenvalues and eigenvectors.
 
-4. **How They Relate**:
-   - Eigen decomposition is a prerequisite for diagonalization.
-   - Diagonalization is essentially **eigen decomposition + sufficient independent eigenvectors**.
-   - If a matrix can be diagonalized, it means eigen decomposition produced a \( Q \) that spans the full space, enabling the diagonal form. If not, eigen decomposition still provides useful information but stops short of diagonalization.
+---
+
+**Diagonalization**:
+
+- **Definition**: A specific case of eigen decomposition where:  
+  $$ M = Q \Lambda Q^{-1} $$  
+  with:  
+  - $Q$: Matrix containing enough linearly independent eigenvectors to span the matrix's space (a full basis).  
+  - $\Lambda$: Diagonal matrix of eigenvalues.  
+
+- **Conditions**:  
+  - The matrix must have a full rank of linearly independent eigenvectors.  
+  - Symmetric and positive definite matrices satisfy this condition, which ensures diagonalization.
+
+---
+
+**Key Differences**:
+
+- **Eigen Decomposition**:  
+  - A general process.  
+  - Works even if eigenvectors are not linearly independent.  
+  - Resulting matrix $Q$ may not fully describe a basis, so $M$ cannot always be diagonalized.  
+
+- **Diagonalization**:  
+  - A stricter condition requiring enough independent eigenvectors to fully span the matrix's space.  
+  - Fails if eigenvectors are dependent (e.g., defective matrices).
+
+---
+
+**How They Relate**:
+
+- Eigen decomposition is a prerequisite for diagonalization.  
+- Diagonalization is essentially eigen decomposition + sufficient independent eigenvectors.  
+- If a matrix can be diagonalized, it means eigen decomposition produced a $Q$ that spans the full space, enabling the diagonal form. If not, eigen decomposition still provides useful information but stops short of diagonalization.
