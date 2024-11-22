@@ -36,6 +36,8 @@ The **Spectral Theorem** ensures that symmetric matrices like `X^T X` can always
 **As a final note, the purpose of this project wasn’t to analyze the pros and cons of each method but to convince myself, step-by-step, that both approaches yield similar results—at least with the Iris dataset. 😊**
 
 
+---
+
 
 ### Clarification: The Difference Between Eigen Decomposition and Diagonalization
 
