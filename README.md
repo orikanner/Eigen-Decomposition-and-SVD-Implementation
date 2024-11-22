@@ -11,7 +11,7 @@ Both methods are based on the fact that $`X^T X`$ captures the relationships and
    - Use the top 3 (for example) eigenvectors to project the data onto a reduced-dimensional space for visualization.
 
 2. **SVD-Based PCA**:
-   - Perform SVD on $`X: `X = U Σ V^T`$.
+   - Perform SVD on `X:` X = U Σ V^T`$.
    - Relate $`X^TX`$ to SVD: $`X^TX = (VΣ^TU^T)(UΣV^T) = VΣ^2V^T`$. (Because U is orthogonal => $`U^TT = I`$)
    - Based on the definition of SVD:
      - `V`: Matrix of **right singular vectors**, which are the **eigenvectors of $`X^TX`$**.
