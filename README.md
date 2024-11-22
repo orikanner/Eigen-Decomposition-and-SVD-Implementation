@@ -30,7 +30,7 @@ Both methods are based on the fact that $`X^T X`$ captures the relationships and
 - **Efficiency**: SVD works directly on non-square matrices and extracts principal components without needing covariance matrix computation.
 
 ### Interesting Note:
-The **Spectral Theorem** ensures that symmetric matrices like $`X^TX`$ can always be diagonalized with real eigenvalues and orthogonal eigenvectors. This property is fundamental to PCA and shows why `X^T X` provides a clear way to represent feature variance in a new orthogonal basis.
+The **Spectral Theorem** ensures that symmetric matrices like $`X^TX`$ can always be diagonalized with real eigenvalues and orthogonal eigenvectors. This property is fundamental to PCA and shows why $`X^TX`$ provides a clear way to represent feature variance in a new orthogonal basis.
 
 ## Final Note:
 **As a final note, the purpose of this project wasn’t to analyze the pros and cons of each method but to convince myself, step-by-step, that both approaches yield similar results—at least with the Iris dataset. 😊**
