@@ -86,4 +86,4 @@ The **Spectral Theorem** ensures that symmetric matrices like $`X^TX`$ can alway
 
 - Eigen decomposition is a prerequisite for diagonalization.  
 - Diagonalization is essentially eigen decomposition + sufficient independent eigenvectors.  
-- If a matrix can be diagonalized, it means eigen decomposition produced a $Q$ that spans the full space, enabling the diagonal form. If not, eigen decomposition still provides useful information but stops short of diagonalization.
+- If a matrix can be diagonalized, it means eigen decomposition produced a $Q$ that spans the full space, enabling the diagonal form. If not, eigen decomposition still provides useful information but stops short of diagonalization
